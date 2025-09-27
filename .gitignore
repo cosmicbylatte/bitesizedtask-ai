@@ -1,0 +1,70 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env*.local
+
+# Next.js build output
+/.next
+/out
+
+# Vercel
+.vercel
+
+
+#### File 5: `jsconfig.json`
+This is a standard configuration file for JavaScript projects.
+
+
+http://googleusercontent.com/immersive_entry_chip/3
+
+---
+
+### Part B: Put the Code on GitHub (No Commands Needed)
+
+1.  **Sign up for GitHub** at [GitHub.com](https://github.com/).
+2.  **Create a New Repository:**
+    * Click the green **"New"** button.
+    * **Repository name:** `vercel-ai-task-app`
+    * Select **"Public"**.
+    * Click **"Create repository"**.
+3.  **Add Your Files:** We will now add the 5 files above.
+    * **Add `.gitignore`:** Click **"Add file"** -> **"Create new file"**. Type `.gitignore` as the name, paste the code for it, and click **"Commit changes"**.
+    * **Add `jsconfig.json`:** Click **"Add file"** -> **"Create new file"**. Type `jsconfig.json` as the name, paste its code, and commit.
+    * **Add `package.json`:** Click **"Add file"** -> **"Create new file"**. Type `package.json` as the name, paste its code, and commit.
+    * **Add `pages/index.js`:** This is slightly different. Click **"Add file"** -> **"Create new file"**. In the name box, type `pages/index.js`. The `/` will automatically create a folder named `pages`. Paste the code for `index.js` inside and commit.
+    * **Add `pages/api/generate.js`:** Again, click **"Add file"** -> **"Create new file"**. In the name box, type `pages/api/generate.js`. Paste the code for `generate.js` and commit.
+
+Your GitHub repository is now complete and ready!
+
+---
+
+### Part C: Deploy on Vercel
+
+1.  **Sign up for Vercel** at [Vercel.com](https://vercel.com/signup), choosing to **"Continue with GitHub"**.
+2.  **Import Your Project:**
+    * You will be taken to your dashboard. Click **"Add New..."** -> **"Project"**.
+    * Find your `vercel-ai-task-app` repository and click the **"Import"** button next to it.
+3.  **Configure the Project:**
+    * Vercel will automatically detect that it's a Next.js project. You don't need to change any build settings.
+    * Open the **"Environment Variables"** section. This is where you put your secret key.
+    * **Name:** `REPLICATE_API_TOKEN`
+    * **Value:** Paste your Replicate API key (the one starting with `r8_...`).
+    * Click **"Add"**.
+4.  **Deploy:**
+    * Click the **"Deploy"** button.
+
+That's it! Vercel will now build and deploy your application. In a few minutes, you will get a congratulations message and a link to your live AI application. This link is your final app, which you can share with anyone.
